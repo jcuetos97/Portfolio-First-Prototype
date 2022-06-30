@@ -13,61 +13,68 @@
   </head>
 
   <body>
-    <!--NAVIGATION BAR-->
+    <!--Header-->
     <header>
-      <p>J. J. Espinosa</p>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About</a>
-          </li>
-          <li>
-           <a href="#my-work">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        <ul>
-      </nav>
+      <p>J. J. Espinosa</p> 
       <a href="https://github.com/jcuetos97">
         <img id="githublogo" src="./assets/images/github.png" alt="Github Link">
       </a>
-    </header>
+    <!--Navigation Menu--> 
+      <div class="dropdown">
+        <img class="dropbtn" src="./assets/images/menu.png" alt="Menu Icon">
+        <div class="dropdown-content">
+          <a href="#about-me">About</a>
+          <a href="#my-work">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div> 
+    </header> 
+    <!--Navigation bar--> 
+    <nav>
+      <ul>
+        <li>
+          <a href="#about-me">About</a>
+        </li>
+        <li>
+          <a href="#my-work">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      <ul>
+    </nav>
 
     <!--ABOUT ME-->
     <section class="content" >
-        <div id="about-me" class="about-me">
-          <img id="mypicture" src="./assets/images/Portfolio Picture.jpg" alt="Portfolio Picture"/>
-          <div class="bio">
-            <h2>About me</h2> 
-            <p>Hi! My name is Juan José Espinosa, but everyone calls me Juanjo. I graduated as an architect form Monterrey Tec University. However, I've always been interested in technology and innovation, and that's why I've decided to switch gears and embark myself in this new, crazy adventure: becoming a professional software engineer. Welcome to my portfolio! Here you will have a chance to see my most recent work. I hope they serve and excite you as much as they have done for me! </p>
-          </div>
+      <div id="about-me" class="about-me">
+        <img id="mypicture" src="./assets/images/Portfolio Picture.jpg" alt="Portfolio Picture"/>
+        <div class="bio">
+          <h2>About me</h2> 
+          <p>Hi! My name is Juan José Espinosa, but everyone calls me Juanjo. I graduated as an architect form Monterrey Tec University. However, I've always been interested in technology and innovation, and that's why I've decided to switch gears and embark myself in this new, crazy adventure: becoming a professional software engineer. Welcome to my portfolio! Here you will have a chance to see my most recent work. I hope you enjoy it! </p>
         </div>
+      </div>
         
     <!--MY WORK-->
-        <div id="my-work" class="my-work">
-          <div class="my-work-header">
-            <h2>My Work</h2>
-          </div>
-          <div class="first-app">
-            <a href="https://github.com/jcuetos97"> Horiseon Website </a>
-          </div>
-          <div id="app1" class="app">
-            <a href="https://github.com/jcuetos97"> Punta del Guaje</a>
-          </div>
-          <div id="app2" class="app">
-              <a href="https://github.com/jcuetos97"> Calculator</a>
-          </div>
-          <div id="app3" class="app">
-            <a href="https://github.com/jcuetos97"> Bank Web</a>
-          </div>
+      <div id="my-work" class="my-work">
+        <div class="my-work-header">
+          <h2>My Work</h2>
         </div>
-    
-    
-    
+        <div class="first-app">
+          <a href="https://github.com/jcuetos97"> Horiseon Website </a>
+        </div>
+        <div id="app1" class="app">
+          <a href="https://github.com/jcuetos97"> Punta del Guaje</a>
+        </div>
+        <div id="app2" class="app">
+          <a href="https://github.com/jcuetos97"> Calculator</a>
+        </div>
+        <div id="app3" class="app">
+          <a href="https://github.com/jcuetos97"> Bank Web App</a>
+        </div>
+      </div>
     <!--CONTACT FORM-->
-    <h2>Contact</h2>
-    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <section id="contact" class="container">
         <form>
           <label for="Name">Name:</label><br>
           <input type="text" id="Name" placeholder="Your name...">
@@ -76,8 +83,8 @@
           <label for="Comment">Comment:</label><br>
           <input type="text" id="Comment" placeholder="Leave any suggestions...">
         </form>
+      </section>
     </section>
-  </section>
 
     <!--FOOTER--> 
     <footer>
@@ -87,11 +94,6 @@
         <a id="Instagram" href="https://www.instagram.com/punta_del_guaje/?hl=en">Instagram</a>
       </div>
     </footer>
-    <br>
-    <br>
-    <br>
   </body>
-
 </html>
 
-<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by IconsBox - Flaticon</a>

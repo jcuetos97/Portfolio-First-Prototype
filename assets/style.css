@@ -5,47 +5,64 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
+    font-family:system-ui, sans-serif
   }
 
   body {
-    font-size: 16px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
   }
 
-  /* || Navigation Bar */
+  /* || Header */
   
   header {
     position: fixed;
     display: inline-flex;
     align-items: center;
-    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    height: 65px;
     top: 0;
     border-bottom: .5px solid rgb(161, 155, 155);
-    height: 65px;
     background-color: #ffffff;
-   
   }
   
   header p {
-    font-weight: 700;
     margin-left: 12px;
+    font-weight: 700;
     font-size: 32px;
     color: black;
   }
   
+  #githublogo {
+    top: 0;
+    right: 5px;
+    height: 35px;
+    margin-right: 35px;
+  }
+
+  #githublogo:hover, header p:hover {
+    transform: scale(1.1);
+  }
+  
+  /* || Navigation Bar */
+
   nav {
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    height: 65px;
+    top: 0;
   }
   
   nav ul {
     display: inline-flex;
     list-style: none;
-    margin-right: 25px;
   }
 
   nav a {
@@ -63,77 +80,72 @@
     color: white;
     border-radius: 15px;
   }
+
   
-  #githublogo {
+  /* || Navigation Menu*/
+  
+  @media only screen and (max-width:768px) {
+    nav, #githublogo {
+      display: none;
+    } 
+  } 
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    display: block;
+    background-image: url(./images/favicon.png) no-repeat;
+    background-image: cover;
+    width:35px;
     height: 35px;
-    margin-right: 35px;
+    margin-right: 15px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 15px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  @media only screen and (min-width:768px) {
+    .dropdown {
+      display: none;
+    } 
   }
 
-  #githublogo:hover {
-    transform: scale(1.1);
-  }
-
-  /* || About me & My work Sections */
+  /* || About me Section */
   
   .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 75px;
-    overflow: hidden;
-
   }
   
   .about-me {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
     margin-bottom: 55px;
     padding-top: 75px;
-  }
-
-  .bio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .bio p {
-    line-height: 27px;
-    font-size: 17px;
-    font-weight: 200;
-    font-style: italic;
-    margin-top: 15px;
-  }
-
-  /*.about-me:hover {
-    transform: scale(1.02);
-  }*/
-
-  .my-work {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
-    color: #ffffff;
-    padding: 25px;
-    margin-bottom: 55px;
-    text-align: center;
-  }
-  
-  .my-work-header {
-    width: 100%;
-    text-align: center;
-    padding: 5px;
   }
 
   #mypicture {
@@ -144,6 +156,30 @@
     margin: 25px;
   }
 
+  .bio p {
+    line-height: 27px;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  /* || My work Section */
+
+  .my-work {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    color: #ffffff;
+    padding: 25px;
+    margin-bottom: 55px;
+  }
+  
+  .my-work-header {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
 
   .first-app {
     display: flex;
@@ -164,7 +200,6 @@
     background-color: #f2f2f2;
     text-align: left;
     color: black;
-    font-weight: 200;
   }
 
   .first-app:hover {
@@ -200,7 +235,6 @@
     background-color: #f2f2f2;
     text-align: left;
     color: black;
-    font-weight: 200;
   }
 
   .app:hover {
@@ -234,6 +268,8 @@
     background-size: cover;
   }
 
+  /* || Footer */
+
   footer {
     position: fixed;
     display: flex;
@@ -259,15 +295,7 @@
     border-radius: 5px;
   }
 
-  
-  
-  #GitHub:hover::after {
-    content: url(./images/github.png);
-    width: 1px;
-    height: 1px; 
-  }
-
-  /*CONTACT FORM*/
+  /* || Contact Form */
 
   input[type=text], select, textarea {
     display: block;
@@ -285,9 +313,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 75px;
+    margin-bottom: 175px;
     width: 40%;
     border-radius: 5px;
     padding: 20px;
-    font-weight: 200;
   }
