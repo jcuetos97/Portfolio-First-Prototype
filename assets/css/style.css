@@ -189,7 +189,7 @@
     border-radius: 25px;
     margin: 25px;
     padding: 25px;
-    background-image: url(./images/First\ App.jpg);
+    background-image: url(.assets\images\First App.jpg);
     background-size: cover;
   }
 
@@ -254,17 +254,17 @@
   }
 
   #app1 {
-    background-image: url(./images/App\ 1.jpg);
+    background-image: url(.assets\images\App1.jpg);
     background-size: cover;
   }
 
   #app2 {
-    background-image: url(./images/App\ 2.jpg);
+    background-image: url(assets\images\App2.jpg);
     background-size: cover;
   }
 
   #app3 {
-    background-image: url(./images/App\ 3.jpg);
+    background-image: url(assets\images\App3.jpg);
     background-size: cover;
   }
 
