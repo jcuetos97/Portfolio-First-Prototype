@@ -189,8 +189,8 @@
     border-radius: 25px;
     margin: 25px;
     padding: 25px;
-    background-image: url(.assets\images\First App.jpg);
-    background-size: cover;
+    background-image: url("FirstApp.jpg");
+    background-size:cover;
   }
 
   .first-app a {
@@ -254,7 +254,7 @@
   }
 
   #app1 {
-    background-image: url(.assets\images\App1.jpg);
+    background-image: url(C:\Users\Juan Jo\TEC BOOTCAMP\Portfolio\assets\images\App1.jpg);
     background-size: cover;
   }
 
