@@ -189,7 +189,7 @@
     border-radius: 25px;
     margin: 25px;
     padding: 25px;
-    background-image: url("FirstApp.jpg");
+    background-image: linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
     background-size:cover;
   }
 
@@ -254,18 +254,19 @@
   }
 
   #app1 {
-    background-image: url(C:\Users\Juan Jo\TEC BOOTCAMP\Portfolio\assets\images\App1.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
+    background-size:cover;
   }
+  
 
   #app2 {
-    background-image: url(assets\images\App2.jpg);
-    background-size: cover;
+    background-image:linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
+    background-size:cover;
   }
 
   #app3 {
-    background-image: url(assets\images\App3.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
+    background-size:cover;
   }
 
   /* || Footer */

@@ -1,1 +1,1 @@
-console.log("dark mode")
+addEventListener("click", darkmode()); 
