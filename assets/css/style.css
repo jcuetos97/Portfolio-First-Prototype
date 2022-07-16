@@ -26,6 +26,7 @@
     top: 0;
     border-bottom: .5px solid rgb(161, 155, 155);
     background-color: #ffffff;
+    
   }
   
   header p {
@@ -44,6 +45,7 @@
 
   #githublogo:hover, header p:hover {
     transform: scale(1.1);
+    transition: right 0.3s;
   }
   
   /* || Navigation Bar */
