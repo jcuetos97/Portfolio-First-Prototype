@@ -14,8 +14,8 @@
 
   <body>
     <!--Header-->
-    <header>
-      <p id="homebttn">J. J. Espinosa</p> 
+    <header id="nav">
+      <p id="homebttn"><i class="fa-regular fa-sun fa-2xs" style="padding: 12px;"></i>J.J.Cuetos</p> 
       <a href="https://github.com/jcuetos97">
         <img id="githublogo" src="./assets/images/github.png" alt="Github Link">
       </a>
@@ -23,78 +23,90 @@
       <div class="dropdown">
         <img class="dropbtn" src="./assets/images/menu.png" alt="Menu Icon">
         <div class="dropdown-content">
-          <a href="#about-me">About</a>
-          <a href="#my-work">Projects</a>
-          <a href="#contact">Contact</a>
+          <a>About</a>
+          <a>Projects</a>
+          <a>Contact</a>
         </div>
       </div> 
     </header> 
+    
     <!--Navigation bar--> 
     <nav>
       <ul>
         <li>
-          <a href="#about-me">About</a>
+          <a class="about">About</a>
         </li>
         <li>
-          <a href="#my-work">Projects</a>
+          <a class="projects">Projects</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a class="contact">Contact</a>
         </li>
       <ul>
     </nav>
 
+    
+    <main>
     <!--ABOUT ME-->
-    <section class="content" >
-      <div id="about-me" class="about-me">
-        <img id="mypicture" src="./assets/images/Portfolio Picture.jpg" alt="Portfolio Picture"/>
-        <div class="bio">
-          <h2>About me</h2> 
-          <p>Hi! My name is Juan José Espinosa, but everyone calls me Juanjo. I graduated as an architect form Monterrey Tec University. However, I've always been interested in technology and innovation, and that's why I've decided to switch gears and embark myself in this new, crazy adventure: becoming a professional software engineer. Welcome to my portfolio! Here you will have a chance to see my most recent work. I hope you enjoy it! </p>
+      <section class="content" >
+        <div id="about-me" class="about-me">
+          <img id="mypicture" src="./assets/images/Portfolio Picture.jpg" alt="Portfolio Picture"/>
+          <div class="bio">
+            <h2>Juan Jose Espinosa</h2> 
+            <h4>Full-stack web developer</h4>
+            <p>Hi! My name is Juan José Espinosa, but everyone calls me Juanjo. I graduated as an architect form Monterrey Tec University. However, I've always been interested in technology and innovation, and that's why I've decided to switch gears and embark myself in this new, crazy adventure: becoming a professional software engineer. Welcome to my portfolio! Here you will have a chance to see my most recent work. I hope you enjoy it! </p>
+          </div>
         </div>
-      </div>
+          
+      <!--MY WORK-->
+        <div id="my-work" class="my-work">
+          <div class="my-work-header">
+            <h2>My Work</h2>
+          </div>
+          <div class="first-app">
+            <a href="https://github.com/jcuetos97/Horiseon-Website"> Horiseon Website </a>
+          </div>
+          <div id="app1" class="app">
+            <a href="https://github.com/jcuetos97"> Punta del Guaje</a>
+          </div>
+          <div id="app2" class="app">
+            <a href="https://github.com/jcuetos97"> Calculator</a>
+          </div>
+          <div id="app3" class="app">
+            <a href="https://github.com/jcuetos97"> Bank Web App</a>
+          </div>
+        </div>
+      <!--CONTACT FORM-->
         
-    <!--MY WORK-->
-      <div id="my-work" class="my-work">
-        <div class="my-work-header">
-          <h2>My Work</h2>
-        </div>
-        <div class="first-app">
-          <a href="https://github.com/jcuetos97/Horiseon-Website"> Horiseon Website </a>
-        </div>
-        <div id="app1" class="app">
-          <a href="https://github.com/jcuetos97"> Punta del Guaje</a>
-        </div>
-        <div id="app2" class="app">
-          <a href="https://github.com/jcuetos97"> Calculator</a>
-        </div>
-        <div id="app3" class="app">
-          <a href="https://github.com/jcuetos97"> Bank Web App</a>
-        </div>
-      </div>
-    <!--CONTACT FORM-->
-      <h2>Contact</h2>
-      <section id="contact" class="container">
-        <form>
-          <label for="Name">Name:</label><br>
-          <input type="text" id="Name" placeholder="Your name...">
-          <label for="Email">Email:</label><br>
-          <input type="text" id="Email" placeholder="Your Email..." >
-          <label for="Comment">Comment:</label><br>
-          <input type="text" id="Comment" placeholder="Leave any suggestions...">
-        </form>
+        <section id="contact" class="container">
+          <h2>Contact</h2>
+          <form>
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" placeholder="Your name...">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" placeholder="Your Email..." >
+            <label for="Comment">Comment:</label><br>
+            <input type="text" id="Comment" placeholder="Leave any suggestions...">
+          </form>
+        </section>
       </section>
-    </section>
-
-    <!--FOOTER--> 
-    <footer>
-      <div class="social-media">
-        <a id="GitHub" href="https://github.com/jcuetos97"> GitHub</a>
-        <a id="LinkedIn" href="https://www.linkedin.com/in/jcuetos97/">LinkedIn</a>
-        <a id="Instagram" href="https://www.instagram.com/punta_del_guaje/?hl=en">Instagram</a>
-      </div>
-    </footer>
-  </body>
+  
+      <!--FOOTER--> 
+      <footer>
+        <div class="social-media">
+          <a id="GitHub" href="https://github.com/jcuetos97"> GitHub<i class="fa-brands fa-github fa-s" style="padding: 7px;" visibility="hidden"></i></a>
+          <a id="LinkedIn" href="https://www.linkedin.com/in/jcuetos97/">LinkedIn <i class="fa-brands fa-linkedin" style="padding: 7px;" visibility="hidden"></i></a>
+          <a id="Instagram" href="https://www.instagram.com/punta_del_guaje/?hl=en">Instagram <i class="fa-brands fa-instagram" style="padding: 7px;" visibility="hidden"></i></a>
+        </div>
+      </footer>
+    </body>
+    </main>
+    
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <script src="https://kit.fontawesome.com/e601f25512.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </html>
