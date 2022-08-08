@@ -11,17 +11,21 @@
   body {
     font-size: 17px;
     font-weight: 200;
-    background-color: #d9e9e8;
-    color: #1a1a1a;
+    background-color:#1a1a1a;
+    color: #d9e9e8;
   }
 
+  #githublogo {
+    filter: brightness(0%); 
+    filter: invert(1);
+  }
+ 
   /* || Header */
   
   header {
-    position: fixed;
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     height: 65px;
@@ -29,46 +33,20 @@
     border-bottom: .5px solid rgb(161, 155, 155);
   }
   
-  header p {
-    margin-left: 12px;
+  #homebttn {
+    position: absolute;
+    left: 5px;
     font-weight: 700;
     font-size: 32px;
   }
   
-  #githublogo {
-    top: 0;
-    right: 5px;
-    height: 35px;
-    margin-right: 35px;
-    /* filter: brightness(0) invert(1); */
-  }
-
-  #githublogo:hover, header i:hover {
-    transform: scale(1.3);
-    transition: right 0.3s;
-  }
-  
-  /* || Navigation Bar */
-
-  nav {
-    position: fixed;
+  header ul {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    margin-right: 25%;
-    margin-left: 25%;
-    height: 65px;
-    top: 0;
-    transition: top 0.3s;
-  }
-  
-  nav ul {
-    display: inline-flex;
     list-style: none;
   }
 
-  nav a {
+ header a {
     font-weight: 200;
     text-decoration: none;
     color: inherit;
@@ -78,17 +56,33 @@
     margin-right: 25px;
   }
 
-  nav a:hover {
+  li a:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     border-radius: 15px;
   } 
 
   
+  #githublogo {
+    position: absolute;
+    right: 15px;
+    height: 35px;
+  }
+
+  #githublogo img {
+    height: 35px;
+  }
+  
+  #githublogo:hover, header i:hover {
+    transform: scale(1.3);
+    transition: right 0.3s;
+  }
+
+  
   /* || Navigation Menu*/
   
   @media only screen and (max-width:768px) {
-    nav, #githublogo {
+    header ul, #githublogo {
       display: none;
     } 
   } 
@@ -131,18 +125,38 @@
     .dropdown {
       display: none;
     } 
+   
+    footer {
+      position: fixed;
+      bottom: 0vh;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .social-media i {
+      display: none;
+    }
   }
 
-  /* || About me Section */
-  main {
-    margin-top: 75px;
-    height: 100vh;
-  }
+  @media only screen and (max-width:1200px) {
     
+    footer {
+      position: relative;
+      bottom: 0;
+    }
+  }
+
+
+  /* || About me Section */
+
   .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
   }
   
   .about-me {
@@ -150,138 +164,36 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 70%;
-    margin-bottom: 55px;
-    padding-top: 75px;
   }
 
   #mypicture {
-    position: relative;
     width: 255px;
     height: 255px;
     border-radius: 50%;
-    margin: 25px;
+    margin-top: 35px;
+  }
+
+  .bio {
+    margin-top: 15px;
+    text-align: center;
   }
 
   .bio p {
     line-height: 27px;
-    font-style: italic;
+    font-weight: 400;
     margin-top: 15px;
-  }
-
-  /* || My work Section */
-
-  .my-work {
-    width: 100%;
-    display: none;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 25px;
-    margin-bottom: 55px;
-  }
-  
-  .my-work-header {
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-  }
-
-  .first-app {
-    display: flex;
-    align-items: center;
-    width: 70%;
-    height: 275px;
-    border-radius: 25px;
-    margin: 25px;
-    padding: 25px;
-    background-image: linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
-    background-size:cover;
-  }
-
-  .first-app a {
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 15px;
-    background-color: #f2f2f2;
-    text-align: left;
-    color: black;
-  }
-
-  .first-app:hover {
-    transform: scale(1.1);
-    box-shadow: #ccc;
-  }
-
-  .first-app:hover > a {
-    transform: scale(1.1);
-    background-color: black;
-    color: white;
-  }
-  .first-app:hover > a::after {
-    content: " / HTML, CSS";
-    color: #ccc;
-  }
-
-  .app {
-    margin: 10px;
-    padding: 25px;
-    width: 70%;
-    height: 155px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(122, 126, 126);
-    border-radius: 25px;
-  }
-
-  .app a {
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 15px;
-    background-color: #f2f2f2;
-    text-align: left;
-    color: black;
-  }
-
-  .app:hover {
-    transform: scale(1.1);
-    box-shadow: #ccc;
-  }
-
-  .app:hover > a {
-    transform: scale(1.1);
-    background-color: black;
-    color: white;
-  }
-  
-  .app:hover > a::after {
-    content: " / HTML, CSS";
-    color: #ccc;
-  }
-
-  #app1 {
-    background-image: linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
-    background-size:cover;
-  }
-  
-
-  #app2 {
-    background-image:linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
-    background-size:cover;
-  }
-
-  #app3 {
-    background-image: linear-gradient(rgb(132, 127, 127), rgb(35, 35, 35));
-    background-size:cover;
   }
 
   /* || Footer */
 
   footer {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0;
     width: 100%;
     height: 110px;
+    background-color:inherit;
   }
 
   footer a {
@@ -295,28 +207,4 @@
     color: black;
     background-color: white;
     border-radius: 5px;
-  }
-
-  /* || Contact Form */
-
-  input[type=text], select, textarea {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  .container {
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 175px;
-    width: 40%;
-    border-radius: 5px;
-    padding: 20px;
   }

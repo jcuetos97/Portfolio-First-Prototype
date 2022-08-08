@@ -1,0 +1,78 @@
+  .my-work {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin-top: 65px;
+  }
+  
+  .my-work-header {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  #first-app {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 25px;
+    background-image: url("https://raw.githubusercontent.com/davidtc8/Formula1-Webpage/master/Assets/Images/formula1-car.jpg");
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+  }
+
+  .app {
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+  }
+
+  .app a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    text-align: left;
+    color: black;
+  }
+
+  .app:hover > a {
+    background-color: black;
+    color: white;
+  }
+  
+  /* .app:hover > a::after {
+    content: " / HTML, CSS";
+    color: #ccc;
+  } */
+  
+  #app1 {
+    background-image:url("https://www.wallpaperup.com/uploads/wallpapers/2012/02/25/1360/8f60022131b6389b3ddb143b9119c19e-700.jpg");
+    background-size:cover;
+    height: 500px;
+  }
+
+  #app2 {
+    background-image: url("https://images.wallpapersden.com/image/download/minimal-glowing-code-binary_a2hrbWWUmZqaraWkpJRnamtlrWZlbWU.jpg#");
+    background-size:cover;
+    height: 500px;
+  }
+
+  #app3 {
+    background-image: url("https://workfeed.io/wp-content/uploads/2022/05/83750F99-8BC9-40D2-AF38-F6BB53206545.jpeg");
+    background-size:cover;
+    height: 500px;
+  }
+
+  .container {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
